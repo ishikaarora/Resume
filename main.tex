@@ -1,0 +1,249 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Ishika Arora (http://bit.ly/ishika-arora)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{}{Ishika Arora}{
+\href{mailto:ishikaarora@gatech.edu}{ishikaarora@gatech.edu} | (678) 956-2767 \\
+\urlstyle{same}\href{https://www.linkedin.com/in/ishika-arora}{www.linkedin.com/in/ishika-arora}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.31\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SUMMARY} 
+MS Analytics candidate seeking internship in Data Science/Data Analytics  with applications of advanced modeling and machine learning techniques
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{GEORGIA INSTITUTE OF}{\raggedleft}
+\subsection{TECHNOLOGY}{\raggedleft}
+\descript{Master of Science in Analytics}
+\location{Computational Data Analytics 
+\\ Expected Dec 2019 | Atlanta, GA}
+\sectionsep
+
+\subsection{INDIAN INSTITUTE OF}
+\subsection{TECHNOLOGY ROORKEE }
+%\location{IIT Roorkee}
+\descript{B.Tech in Biotechnology}
+\location{May 2014 | Roorkee, India}
+Merit Scholarship (All Semesters) \\
+\location{\custombold{Cum. GPA: 3.72 / 4.0}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Analytics Modeling \\ 
+Regression Analysis \\
+Computing For Data Analysis \\
+Data And Visual Analytics \\
+Deterministic Optimization \\
+Big Data Analytics \\
+Web Search and Text Mining \\
+Time Series Analysis \\
+Machine Learning \\
+\sectionsep
+
+\subsection{Undergraduate}
+Fundamentals of OOP \\
+%Web Designing And Development
+Mathematical Modeling \\
+Operations Research
+\sectionsep
+
+%\subsection{MOOCS}
+%Machine Learning by Andrew Ng \\
+%Python Fundamentals by Bingham and Smallshire
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\textbullet{} Python \textbullet{} C \textbullet{} C++ \textbullet{} Java \textbullet{} R \textbullet{} MATLAB \textbullet{} Octave \textbullet{} HTML \textbullet{} CSS \textbullet{} JavaScript \textbullet{} SQL 
+\sectionsep
+
+\subsection{Software/Databases}
+\textbullet{} MemSQL \textbullet{} SQLite \textbullet{} MongoDB  \textbullet{} Xpress \textbullet{} Tableau \textbullet{} OpenRefine \textbullet{} Gephi \textbullet{} SAS \textbullet{} Spotfire \textbullet{} AWS 
+\sectionsep
+
+\subsection{Tools/Frameworks}
+\textbullet{} Hadoop \textbullet{} Spark \textbullet{} Pig \textbullet{} Hive \textbullet{} DBSCAN \textbullet{} HBase \textbullet{} MapReduce \textbullet{} Scikit-learn \textbullet{} D3.js \textbullet{} Flask \textbullet{} Pandas 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{STATE STREET CORPORATION}
+\descript{| Data Analyst }
+\location{Aug 2017 – Jul 2018 | Bengaluru, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Created scalable, automated models using advanced statistical techniques
+\item Developed infrastructure to retrieve \& preprocess data for ongoing monitoring and recalibration of models using outlier detection methods
+\item Remodeled deposit rate predictive model in R using time series analysis models like exponential fitting \& autoregressive distributed lag (ARDL) modeling
+\end{tightemize}
+\sectionsep
+
+\runsubsection{GOLDMAN SACHS}
+\descript{| Quantitative Strategist}
+\location{Jun 2014 – Aug 2017 | Bengaluru, India}
+\begin{tightemize}
+\item Developed strategies and research tools for asset allocation based on huge datasets retrieved from relational and non-relational databases 
+\item Built caching infrastructure using MemSQL to serve data with low latency
+\item Created a web dashboard tool in JavaScript to actively track risk metrics
+\item Revamped liability infrastructure and incorporated dynamically updating workflow objects; achieved manual error reduction by ~20\% through validations
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ROBERT BOSCH ENGINEERING SOLUTIONS}
+\descript{| Analyst (Intern)}
+\location{May 2013 – Jul 2013 | Bengaluru, India}
+\begin{tightemize}
+\item Proposed a real-time, non-intrusive driver drowsiness detection algorithm using spectral analysis of heart rate time series
+\item Extracted time-domain and frequency-domain parameters from heart rate time series, and employed curve fitting methods to identify trends in MATLAB
+
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACADEMIC PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+\runsubsection{Predicting Heart Attacks Using ML}
+\descript{| Humana Healthcare}
+\location{Aug 2018 – Present | Atlanta, GA}
+\begin{tightemize}
+\item Leverage historical data to better understand Acute Myocardial Infarctions
+\item Build a predictive model to calculate probability of getting a heart attack
+\item Feature selection and model selection based on more than 80 variables
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Optimization of Biofuel Production}
+\descript{| IIT Roorkee}
+\location{Jul 2013 – May 2014 | Roorkee, India}
+\begin{tightemize}
+\item Analyzed effects of nutrient source concentrations on growth rate of cyanobacteria for maximising biofuel production
+\item Predicted the maximum biomass concentration using a logistic growth model
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Mathematical Modeling of Leukaemia}
+\descript{ | IIT Roorkee}
+\location{Jan 2012 – Dec 2012 | Roorkee, India}
+\begin{tightemize}
+\item Quantified the effects of immunotherapy on relapsing tumor with a model of ordinary differential equations (ODEs) 
+\item Estimated values of unknown parameters using steady-state solutions of time series in MATLAB and Mathematica
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LEADERSHIP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{LEADERSHIP} 
+
+\begin{tabular}{rll}
+2018 & Industry Relations Chair, Grad Society of Women Engineers (SWE), Georgia Tech \\                  
+2016 & Events Coordinator, Child Rights and You (CRY) Bengaluru Chapter \\
+2015 & Coordinator, “Women Emerging in Finance”, Goldman Sachs India \\
+2012 & Promotions Coordinator, Cognizance - the Annual Technical Festival, IIT Roorkee\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
