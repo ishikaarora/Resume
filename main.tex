@@ -152,8 +152,9 @@ Operations Research
 \sectionsep
 
 \subsection{Tools/Frameworks}
-\textbullet{} Hadoop \textbullet{} Spark \textbullet{} Pig \textbullet{} Hive \\ \textbullet{} DBSCAN \textbullet{} HBase \textbullet{} MapReduce \\
-\textbullet{} Scikit-learn \textbullet{} D3.js \textbullet{} Pandas 
+\textbullet{} Scikit-learn \textbullet{} spaCy \textbullet{} D3.js \textbullet{} Pandas \\
+\textbullet{} Hadoop \textbullet{} Spark \textbullet{} Pig \textbullet{} Hive \\ 
+\textbullet{} DBSCAN \textbullet{} HBase \textbullet{} MapReduce
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -214,8 +215,8 @@ Operations Research
 \location{Oct 2018 – Present | Atlanta, GA}
 \begin{tightemize}
 \item Build an aspect-based sentiment analysis model on 130M+ Amazon reviews
-\item Design a UI to display overall sentiments of feature categories of a product
-\item Identify adjective-noun pairs from reviews using dependency parser, cluster aspects into broad categories, and use hybrid models to determine polarity
+\item Extract adjective-noun pairs from text using spaCy dependency parser and use Naive-Bayes classifier for categorizing text and determining polarity
+\item Implement feature clustering using word vectorization and design a Flask app to display sentiments grouped by customized categories for each product type
 \end{tightemize}
 \sectionsep
 
@@ -223,8 +224,8 @@ Operations Research
 \descript{| Georgia Tech}
 \location{Oct 2018 – Present | Atlanta, GA}
 \begin{tightemize}
-\item Develop multivariate regression model to predict air quality based on county-level demographic and geographical data collected from various sources
-\item Optimize model accuracy using variable selection and model selection methods
+\item Develop multivariate regression model to predict air quality; implement stepwise and Lasso regression for variable and model selection
+\item Identify relationship of air quality with demographic and geographical factors 
 \end{tightemize}
 \sectionsep
 
@@ -232,8 +233,10 @@ Operations Research
 \descript{ | IIT Roorkee}
 \location{Jan 2012 – Dec 2012 | Roorkee, India}
 \begin{tightemize}
-\item Quantified the effects of immunotherapy on relapsing tumor cells and immune cells with a model of ordinary differential equations (ODEs) 
-\item Estimated values of unknown parameters using steady-state solutions of time series model and determined optimal quantity of immune agents for treatment
+\item Built a model of ordinary differential equations (ODEs) with 5 variables to quantify the effects of immunotherapy on relapsing tumor and immune cells
+\item Determined optimal treatment levels using steady-state solution of the model
+%\item Quantified the effects of immunotherapy on relapsing tumor cells and immune cells with a model of ordinary differential equations (ODEs) 
+%\item Determined optimal quantity of immune agents with steady state solution of the model
 \end{tightemize}
 \sectionsep
 
