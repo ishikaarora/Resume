@@ -20,7 +20,7 @@
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{primary}{HTML}{040404} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
@@ -56,7 +56,7 @@ Last Updated on
 
 % Headings command
 \titleformat{\section}{\color{headings}
-\scshape\fontspec[Path = fonts/lato/]{Lato-Lig}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
+\scshape\fontspec[Path = fonts/lato/]{Lato-Bol}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase}{} {0em}{}
 
 % Subeadings command
 \titleformat{\subsection}{\color{subheadings}
